@@ -1,0 +1,13 @@
+FTP 파일 전송
+1. serverOn 을 실행.(딱 한 번만)
+2. 비밀번호를 입력. ftpuser 비밀번호는 123으로 설정.
+3. 장치 -> 네트워크 -> 포트포워딩에서
+호스트 IP 그냥 컴퓨터 IP주고 게스트 IP는 10.0.2.15
+포트 번호 21, 22로 두개 생성.
+
+4. project 프로그램 실행
+5. 커맨드 5 ( 압축되지 않은 파일일 경우 압축해서 /home/ftpuser/ 폴더로 보냄)
+6. cmd에서 파일 가져올 폴더로 이동
+예를 들면 :d -> cd shared(그 폴더에는 ftp_exe.bat, ftp_exe.txt 파일을 준비되어있어야 함)
+7. ftp_exe.bat 실행.( ftp_exe.txt에 open IP주소 본인 호스트 IP주소로 변경 )
+8. 자동적으로 ftp 서버에 연결해 파일을 가져오고 리눅스에서는 가져온 파일을 삭제함.( /home/ftpuser/ftpfile.zip 가 삭제 )
